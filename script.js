@@ -3,6 +3,7 @@ const humidityElem = document.getElementById("humidity");
 const temperatureElem = document.getElementById("temperature");
 const photosensorElem = document.getElementById("photosensor");
 
+
 // Chart data
 const data = {
     labels: [],
@@ -56,7 +57,7 @@ const sensorChart = new Chart(ctx, {
 // Fetch data from the API
 async function fetchSensorData() {
     try {
-        const response = await fetch("http://<ESP32_IP>/api/sensors");
+        const response = await fetch("https://cb82-147-232-153-61.ngrok-free.app");
         const sensorData = await response.json();
 
         // Update current values
