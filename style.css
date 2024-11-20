@@ -6,7 +6,9 @@ body {
     color: #333;
 }
 
-title {
+center {
+    float: none;
+    margin: auto;
     text-align: center;
 }
 
