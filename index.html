@@ -1,10 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Sensor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>MeteoWebx</h1>
+    <header>
+        <h1>ESP32 Sensor Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="current-values">
+            <h2>Valores Actuales</h2>
+            <div class="value">
+                <span>Humedad:</span> <span id="humidity">-</span>%
+            </div>
+            <div class="value">
+                <span>Temperatura:</span> <span id="temperature">-</span>°C
+            </div>
+            <div class="value">
+                <span>Fotosolar:</span> <span id="photosensor">-</span>
+            </div>
+        </section>
+
+        <section class="chart-container">
+            <h2>Historial de Humedad y Temperatura</h2>
+            <canvas id="sensorChart"></canvas>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
