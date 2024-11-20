@@ -6,14 +6,8 @@ body {
     color: #333;
 }
 
-center {
-    float: none;
-    margin: auto;
-    text-align: center;
-}
-
 header {
-    background: #007BFF;
+    background: #006f97;
     color: white;
     text-align: center;
     padding: 1em 0;
