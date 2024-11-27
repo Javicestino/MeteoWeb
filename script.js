@@ -88,6 +88,6 @@ async function fetchSensorData() {
     }
 }
 
-// Fetch data every 60 seconds
-setInterval(fetchSensorData, 60000);
+// Fetch data every 600 seconds
+setInterval(fetchSensorData, 600000);
 fetchSensorData();
