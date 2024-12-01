@@ -57,7 +57,7 @@ const sensorChart = new Chart(ctx, {
 // Fetch data from the API
 async function fetchSensorData() {
     try {
-        const response = await fetch("https://fe9d-31-221-234-183.ngrok-free.app/data.json",{
+        const response = await fetch("https://reqbin.com/echo/post/json",{
             headers : {
                 "ngrok-skip-browser-warning" : "test"
             }
